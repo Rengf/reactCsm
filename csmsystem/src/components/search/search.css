@@ -1,0 +1,28 @@
+.search-box {
+  width: 98%;
+  height: 50px;
+  margin: 10px auto;
+}
+.search-box label {
+  display: block;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #333;
+}
+.search-box label input {
+  width: 140px;
+  height: 38px;
+  margin: 0 5px;
+  outline: none;
+  border: none;
+  vertical-align: top;
+}
+.search-box label button {
+  width: 50px;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #3463ff;
+  cursor: pointer;
+}

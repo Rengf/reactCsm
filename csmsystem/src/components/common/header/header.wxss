@@ -1,0 +1,232 @@
+.newsbox-enter,
+.newsbox-leave-to {
+  transform: translateX(300px);
+  opacity: 0;
+}
+.newsbox-enter-active {
+  transition: all .3s ease;
+}
+.newsbox-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 24px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.red {
+  background-color: #fff;
+  color: red;
+}
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: #000;
+  position: fixed;
+  z-index: 999;
+}
+.box {
+  width: 500px;
+  height: 70px;
+}
+.left_box {
+  float: left;
+}
+.right_box {
+  float: right;
+}
+.edition,
+.logo {
+  margin-left: 30px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 70px;
+}
+.search_box {
+  line-height: 70px;
+  display: inline-block;
+  width: 250px;
+  height: 70px;
+}
+.search_btn {
+  float: left;
+  margin-top: 16px;
+  display: block;
+  border-left: 1px solid #dddddd;
+  width: 35px;
+  height: 38px;
+  text-align: center;
+  line-height: 38px;
+  cursor: pointer;
+  background: -moz-linear-gradient(top, #ffffff, #ededed);
+  background: -o-linear-gradient(top, #ffffff, #ededed);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#ededed));
+}
+.search {
+  outline: none;
+  margin-top: 16px;
+  display: block;
+  float: left;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  height: 36px;
+  line-height: 38px;
+  padding: 0px 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 183px;
+}
+.message_box {
+  vertical-align: top;
+  clear: both;
+  display: inline-block;
+  width: 38px;
+  height: 70px;
+}
+.message_box span {
+  position: relative;
+  margin-top: 16px;
+  display: block;
+  color: #fff;
+  font-size: 30px;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  background-color: #666;
+}
+.message_box span:hover {
+  cursor: pointer;
+}
+.message_num {
+  top: -5px;
+  left: -5px;
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  color: #fff;
+  font-size: 8px;
+  border-radius: 50%;
+  background-color: red;
+}
+.admin_box {
+  vertical-align: top;
+  clear: both;
+  display: inline-block;
+  width: 190px;
+  height: 70px;
+}
+.admin_box p {
+  display: block;
+  margin-top: 16px;
+  width: 190px;
+  height: 38px;
+  line-height: 38px;
+  background-color: #666;
+}
+.admin_box p:hover {
+  cursor: pointer;
+}
+.portrait {
+  display: inline-block;
+  margin: 4px;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+}
+.admin_box p i,
+.admin_box p span {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+}
+.admin_other {
+  position: relative;
+  top: 5px;
+  width: 188px;
+  height: 99px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  z-index: 999999;
+}
+.admin_other li:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+.admin_other li span {
+  line-height: 33px;
+  width: 80%;
+  height: 33px;
+}
+.admin_other li span i {
+  margin-left: 20px;
+  font-size: 18px;
+}
+.admin_other li span {
+  font-size: 13px;
+  color: #555;
+}
+.news_box {
+  position: absolute;
+  right: 0px;
+  top: 70px;
+  width: 300px;
+  max-height: 500px;
+  z-index: 99999;
+  background: #fff;
+  overflow: auto;
+  overflow-x: hidden;
+  box-shadow: -4px 0px 20px #888888;
+}
+.news_header {
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  background: #373737;
+  border-bottom: 1px solid #494949;
+}
+.news_body li {
+  padding: 10px;
+  width: 100%;
+  height: 71px;
+  border-bottom: 1px solid #ccc;
+}
+.news_body h5 {
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.news_detail {
+  display: block;
+  width: 100%;
+  height: 51px;
+}
+.news_body li:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+.news_detail i {
+  margin-top: 8px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #5cb85c;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+}
+.news_detail span {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 13px;
+  color: #333;
+  width: 230px;
+  line-height: 25px;
+}

@@ -1,0 +1,15 @@
+.content-wrap {
+  position: relative;
+  left: 11%;
+  top: 70px;
+  width: 89%;
+  min-height: calc(30vh);
+}
+.content-wrap .content {
+  position: absolute;
+  width: 98%;
+  min-height: calc(-10vh);
+  margin-top: 20px;
+  margin-left: 1%;
+  border: 1px solid #aac;
+}

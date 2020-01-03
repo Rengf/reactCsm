@@ -1,0 +1,38 @@
+.comfirm {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(136, 136, 136, 0.411);
+  z-index: 9999;
+}
+.comfirm .comfirm-box {
+  width: 400px;
+  height: 130px;
+  margin: 200px auto;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+}
+.comfirm .comfirm-box span {
+  line-height: 70px;
+}
+.comfirm .comfirm-box button {
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  margin: 0 15px;
+  border: none;
+  cursor: pointer;
+}
+.comfirm .comfirm-box button:hover {
+  background-color: #3172ff;
+  color: #fff;
+}
+.comfirm .comfirm-box button:active {
+  background-color: #0f5bff;
+}
+.no-comfirm {
+  display: none;
+}

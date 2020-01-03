@@ -1,0 +1,51 @@
+.user-list table {
+  width: 98%;
+  margin: 10px auto;
+}
+.user-list table thead tr {
+  color: #707070;
+  font-weight: normal;
+  background: #f2f2f2;
+  background-image: -webkit-gradient(linear, left 0, left 100%, from(#f8f8f8), to(#ececec));
+  background-image: -webkit-linear-gradient(top, #f8f8f8, 0%, #ececec, 100%);
+  background-image: -moz-linear-gradient(top, #f8f8f8 0, #ececec 100%);
+  background-image: linear-gradient(to bottom, #f8f8f8 0, #ececec 100%);
+  background-repeat: repeat-x;
+}
+.user-list table thead tr th {
+  height: 29px;
+  line-height: 29px;
+  padding: 5px 10px;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+.user-list table tbody tr td {
+  padding: 5px 10px;
+  line-height: 30px;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  color: #666;
+  text-align: center;
+  font-size: 12px;
+  max-width: 100px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.user-list table tbody tr:hover {
+  background: #aef1fd;
+}
+.user-list table tbody tr button {
+  margin: 0 3px;
+  width: 50px;
+  outline: 0;
+  background: #3a8ee6;
+  border: 0px;
+  color: #fff;
+}
+.user-list table tbody tr button:hover {
+  cursor: pointer;
+}

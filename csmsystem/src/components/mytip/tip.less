@@ -1,0 +1,30 @@
+.tips {
+  position: fixed;
+  width: 250px;
+  height: 40px;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -125px;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 0 0 25px -5px;
+  animation: fadein 2s ease;
+}
+
+.no-tips {
+  display: none;
+}
+
+@keyframes fadein {
+  /*设置内容由显示变为隐藏*/
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
