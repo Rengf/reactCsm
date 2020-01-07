@@ -1,0 +1,94 @@
+.add-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(148, 148, 148, 0.315);
+    z-index: 99999;
+    top: 0;
+    left: 0;
+
+    .add-box {
+        width: 500px;
+        height: 300px;
+        background-color: #fff;
+
+        .add-header {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+
+            span {
+                font-size: 18px;
+                font-weight: bold;
+                color: #000;
+            }
+
+            i {
+                font-size: 16px;
+                position: absolute;
+                right: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .add-main {
+            width: 100%;
+
+            form {
+
+                width: 80%;
+                height: 200px;
+                margin: auto;
+
+                span {
+                    display: inline-block;
+                    width: 80px;
+                    height: 50px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    vertical-align: middle;
+                }
+
+                .text-msg {
+                    display: block;
+                    height: 50px;
+                    line-height: 40px;
+                    margin: 5px 0;
+
+                    input {
+                        height: 30px;
+                        width: 250px;
+                        padding: 0 5px;
+                        font-size: 16px;
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .add-btn {
+            width: 100%;
+            height: 50px;
+
+            button {
+                display: block;
+                width: 80%;
+                height: 40px;
+                font-size: 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #1aa4ff;
+                margin: auto;
+                color: #fff;
+                cursor: pointer;
+                font-weight: 600;
+                letter-spacing: 10px;
+            }
+        }
+    }
+}

@@ -14,7 +14,8 @@ export default class User extends React.Component {
       userList: [],
       comfirmMsg: "",
       tipMsg: "",
-      deleteUserId: ""
+      deleteUserId: "",
+      totalData: 0
     };
   }
 
@@ -37,14 +38,15 @@ export default class User extends React.Component {
     }
   };
 
-  getUserList = async (page = 1, limit = 3) => {
+  getUserList = async (page = 1, limit = 5) => {
     var data = {
       page: page,
       limit: limit
     };
     var result = await reqUserList(data);
     this.setState({
-      userList: result.data
+      userList: result.data.userlist,
+      totalData: result.data.count
     });
   };
 
@@ -54,14 +56,20 @@ export default class User extends React.Component {
       comfirmMsg: "确认删除该用户？"
     });
   };
+
   editUser = id => {
     console.log(id);
   };
+
+  toPage = (page, limit) => {
+    this.getUserList(page, limit);
+  };
+
   componentDidMount() {
     this.getUserList();
   }
   render() {
-    let { userList, comfirmMsg, tipMsg } = this.state;
+    let { userList, comfirmMsg, tipMsg, totalData } = this.state;
     return (
       <div className="user-list">
         <Comfirm comfirmMsg={comfirmMsg} getComfirm={this.getComfirm}></Comfirm>
@@ -142,7 +150,7 @@ export default class User extends React.Component {
             })}
           </tbody>
         </table>
-        <Pagination></Pagination>
+        <Pagination totalData={totalData} toPage={this.toPage}></Pagination>
       </div>
     );
   }

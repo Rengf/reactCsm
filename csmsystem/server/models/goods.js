@@ -5,22 +5,22 @@ mongoose.connect("mongodb://localhost:27017/csmsystem", {
 });
 var Schema = mongoose.Schema;
 
-var userSchema = new Schema({
-    tel: {
+var goodsSchema = new Schema({
+    goods_name: {
         type: String,
         required: true
     },
-    email: {
+    goods_picture: {
         type: String,
         required: true
     },
-    nickname: {
+    goods_price: {
         type: String,
         required: true
     },
-    password: {
-        type: String,
-        required: true
+    goods_category: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Category"
     },
     created_time: {
         type: Date,
@@ -30,37 +30,18 @@ var userSchema = new Schema({
         type: Date,
         default: new Date()
     },
-    last_login_time: {
-        type: Date,
-        default: new Date()
-    },
-    avatar: {
-        type: String,
-        default: "../../static/image/timg.jpg"
-    },
-    bio: {
+    goods_description: {
         type: String,
         default: ""
     },
-    gender: {
+    stock: {
         type: Number,
-        enum: [-1, 0, 1],
-        default: -1
-    },
-    birthday: {
-        type: Date,
-        default: new Date()
-    },
-    status: {
-        type: Number,
-        enum: [0, 1, 2],
         default: 0
     },
-    user_type: {
+    sales: {
         type: Number,
-        enum: [0, 1, 2],
         default: 0
     }
 });
 
-module.exports = mongoose.model("User", userSchema);
+module.exports = mongoose.model("Goods", goodsSchema);

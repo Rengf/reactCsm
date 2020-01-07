@@ -27,10 +27,22 @@ export const reqRegister = data =>
 export const reqCaptcha = () => ajax(BASE_URL + "/api/getcaptcha", {}, "GET");
 
 //获取用户列表
-export const reqUserList = (data) => ajax(BASE_URL + "/search/userlist", data, "POST");
+export const reqUserList = data =>
+    ajax(BASE_URL + "/search/userlist", data, "POST");
 
 //删除用户
 export const reqDeleteUser = id =>
-    ajax(BASE_URL + "/delete/deleteuser", {
-        id: id
-    }, "POST");
+    ajax(
+        BASE_URL + "/delete/deleteuser", {
+            id: id
+        },
+        "POST"
+    );
+
+//获取分类列表
+export const reqCategoryList = data =>
+    ajax(BASE_URL + "/search/categorylist", data, "POST");
+
+//添加分类
+export const reqAddCategory = data =>
+    ajax(BASE_URL + "/add/addcategory", data, "POST");

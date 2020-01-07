@@ -17,6 +17,14 @@ module.exports = function(app) {
     );
     app.use(
         proxy(
+            "/add/*", {
+                target: "http://localhost:3001",
+                changeOrigin: true
+            }
+        )
+    );
+    app.use(
+        proxy(
             "/search/*", {
                 target: "http://localhost:3001",
                 changeOrigin: true

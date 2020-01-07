@@ -67,7 +67,7 @@ const menuList = [{
         sublists: [{
                 title: "分类列表",
                 icon: "&#xeb0b;",
-                url: "/admin/categorylist"
+                url: "/category"
             },
             {
                 title: "删除分类",

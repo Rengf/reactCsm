@@ -1,7 +1,6 @@
 .search-box {
-  width: 98%;
-  height: 50px;
-  margin: 10px auto;
+  float: right;
+  height: 42px;
 }
 .search-box label {
   display: block;
